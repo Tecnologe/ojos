@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ojos Parpadeando</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: blanchedalmond;
+            font-family: 'Arial', sans-serif;
+        }
+        .eyes-container {
+            display: flex;
+            gap: 20px;
+        }
+        .eye {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: #fff;
+            position: relative;
+            overflow: hidden;
+            border: 2px solid #000;
+        }
+        .iris {
+            width: 50px;
+            height: 50px;
+            background-color: #b5651d;
+            border-radius: 50%;
+            position: absolute;
+            top: 25%;
+            left: 25%;
+        }
+        .eyelid {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: #fff;
+            top: 0;
+            left: 0;
+            animation: blink 4s infinite;
+        }
+        @keyframes blink {
+            0%, 80%, 100% {
+                height: 0;
+            }
+            85%, 95% {
+                height: 100%;
+            }
+        }
+        .letter-container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 24px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            text-align: justify;
+            width: 90%;
+            margin-top: 20px;
+        }
+        h1, p {
+            text-align: center;
+        }
+        h1 {
+            margin-top: 20px;
+            color: #8b4513;
+        }
+    </style>
+</head>
+<body>
+    <div class="eyes-container">
+        <div class="eye">
+            <div class="iris"></div>
+            <div class="eyelid"></div>
+        </div>
+        <div class="eye">
+            <div class="iris"></div>
+            <div class="eyelid"></div>
+        </div>
+    </div>
+    <h1>Tu mirada</h1>
+    
+    <div class="letter-container">
+        <p>Querida Niña,</p>
+        <p>
+            La belleza se manifiesta de muchas maneras, pero hay algo realmente especial en unos ojos cafés. En ellos se encuentra una profundidad única, una calidez que refleja el alma de quien los posee. Cada mirada, cada parpadeo, es una ventana a un mundo lleno de historias y emociones.
+        </p>
+        <p>
+            Los ojos cafés tienen un encanto natural que cautiva a cualquiera que tenga la suerte de cruzarse con ellos. Son como la tierra fértil y el café recién hecho; ricos en tonos y matices, ofreciendo siempre algo nuevo que descubrir. En la simplicidad de su color, reside una sofisticación innata que no necesita adornos adicionales.
+        </p>
+        <p>
+            Siempre he creído que la verdadera belleza radica en la autenticidad, y tus ojos son un testimonio viviente de ello. No importa la luz en la que se encuentren, siempre brillan con una intensidad que es imposible de ignorar. Son, sin duda, una de las muchas razones por las que el mundo es un lugar más hermoso con tu presencia.
+        </p>
+        <p>
+            Con cariño,<br>
+            YO💓
+        </p>
+    </div>
+</body>
+</html>
